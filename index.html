@@ -1,235 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Muhammad Faizan Ahmed</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            border-bottom: 3px solid #667eea;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            font-style: italic;
-        }
-
-        nav {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 1rem 2rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #667eea;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        section {
-            background: white;
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        section h2 {
-            color: #667eea;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 0.5rem;
-        }
-
-        .project-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            border-left: 4px solid #667eea;
-            border-radius: 5px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateX(10px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
-        }
-
-        .project-card h3 {
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-card p {
-            color: #666;
-            margin-bottom: 0.5rem;
-        }
-
-        .skill-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .skill-item {
-            background: #f0f0f0;
-            padding: 1rem;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: 500;
-            color: #667eea;
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-links a {
-            background: #667eea;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .contact-links a:hover {
-            background: #764ba2;
-        }
-
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-            border-top: 3px solid #667eea;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <title>Muhammad Faizan Ahmed | Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Muhammad Faizan Ahmed</h1>
-        <p>Software Engineer | Developer | Innovator</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+    <div class="logo">MFA Portfolio</div>
+    
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="floating-nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate software engineer dedicated to creating innovative solutions and building high-quality applications. With a strong foundation in various programming languages and technologies, I strive to deliver excellence in every project I undertake.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of your first project and the technologies used.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A brief description of your second project and the technologies used.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>A brief description of your third project and the technologies used.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill-list">
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">HTML & CSS</div>
-                <div class="skill-item">React</div>
-                <div class="skill-item">Node.js</div>
-                <div class="skill-item">Git & GitHub</div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me for any inquiries or opportunities:</p>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://github.com/Engr-Muhammad-Faizan-Ahmed" target="_blank">GitHub</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Twitter</a>
-            </div>
-        </section>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Muhammad Faizan Ahmed. All rights reserved.</p>
-    </footer>
+    <div class="hero-content">
+
+        <div class="subtitle">
+            ENGINEERING • INNOVATION • TECHNOLOGY
+        </div>
+
+        <h1>Muhammad Faizan Ahmed</h1>
+
+        <p>
+            Full-stack engineer specializing in digital manufacturing, 
+            Industry 4.0 systems, and cyber-physical integration
+        </p>
+
+        <a href="#projects" class="btn">
+            Explore My Work
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="section" id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-content">
+
+            <p class="text">
+                I am a passionate software engineer and digital manufacturing specialist with expertise in 
+                Industry 4.0 technologies, additive manufacturing, and cyber-physical systems. 
+                My work bridges the gap between digital design and real-world manufacturing through 
+                innovative solutions and rigorous engineering principles.
+            </p>
+
+            <p class="text">
+                With hands-on experience in CAD design, 3D printing optimization, 
+                automated assembly systems, and production simulation, I have successfully delivered 
+                complex projects that integrate multiple manufacturing technologies into cohesive workflows.
+            </p>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-desc">Print Iterations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6</div>
+                    <div class="stat-desc">CP Lab Stations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-desc">Quality Target</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about-features">
+
+            <div class="feature-box">
+                <div class="feature-icon">⚙️</div>
+                <h3>Manufacturing Expertise</h3>
+                <p>
+                    Specialized knowledge in FDM 3D printing, additive manufacturing process optimization,
+                    and design for manufacturability principles.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🔗</div>
+                <h3>Industry 4.0 Integration</h3>
+                <p>
+                    Experience implementing digital twins, QR-based traceability systems, 
+                    and cyber-physical manufacturing workflows.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🤖</div>
+                <h3>Automation & Validation</h3>
+                <p>
+                    Proficient with FESTO CP Lab automated assembly systems, 
+                    dimensional verification, and automated quality assurance.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section class="section dark" id="projects">
+
+    <h2 class="title">Featured Projects</h2>
+
+    <p class="text">
+        A selection of engineering projects showcasing digital manufacturing, 
+        system integration, and innovative problem-solving.
+    </p>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>Phones-R-Us Manufacturing</h3>
+                <span class="project-tag">FEATURED</span>
+            </div>
+
+            <p>
+                Comprehensive Industry 4.0 smart manufacturing workflow combining 
+                additive manufacturing, automated FESTO validation, QR-based digital traceability, 
+                and Tecnomatix production simulation for scalable 3D printed phone casings.
+            </p>
+
+            <div class="project-tech">
+                <span>Fusion 360</span>
+                <span>FDM 3D Printing</span>
+                <span>FESTO CP Lab</span>
+                <span>Tecnomatix</span>
+                <span>QR Traceability</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>Cyber-Physical System Design</h3>
+                <span class="project-tag">CPS</span>
+            </div>
+
+            <p>
+                Digital twin implementation for manufacturing workflow monitoring, 
+                real-time quality metrics tracking, and automated production optimization 
+                using Industry 4.0 sensor integration.
+            </p>
+
+            <div class="project-tech">
+                <span>IoT Sensors</span>
+                <span>Real-time Data</span>
+                <span>Digital Twin</span>
+                <span>Cloud Integration</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>Production Simulation</h3>
+                <span class="project-tag">SIMULATION</span>
+            </div>
+
+            <p>
+                Advanced factory simulation using Tecnomatix platform analyzing production throughput, 
+                bottleneck identification, resource utilization optimization, 
+                and Theory of Constraints implementation.
+            </p>
+
+            <div class="project-tech">
+                <span>Tecnomatix</span>
+                <span>Simulation</span>
+                <span>Optimization</span>
+                <span>Analytics</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>Automated Quality Assurance</h3>
+                <span class="project-tag">QA SYSTEM</span>
+            </div>
+
+            <p>
+                FESTO CP Lab integration for automated dimensional validation, 
+                snap-fit testing, assembly verification, and defect detection 
+                in cyber-physical manufacturing systems.
+            </p>
+
+            <div class="project-tech">
+                <span>FESTO CP Lab</span>
+                <span>Automation</span>
+                <span>QA Testing</span>
+                <span>Validation</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>CAD Design & Optimization</h3>
+                <span class="project-tag">CAD</span>
+            </div>
+
+            <p>
+                Comprehensive Fusion 360 design workflow including geometry optimization, 
+                tolerance analysis, manufacturability assessment, and iterative design refinement 
+                for additive manufacturing.
+            </p>
+
+            <div class="project-tech">
+                <span>Fusion 360</span>
+                <span>CAD Design</span>
+                <span>Tolerancing</span>
+                <span>Analysis</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h3>Multi-Printer Workflow</h3>
+                <span class="project-tag">WORKFLOW</span>
+            </div>
+
+            <p>
+                Advanced additive manufacturing strategy leveraging Ultimaker S5, S3, and Bambu Lab P1S 
+                for optimized print parameter selection, rapid prototyping iteration, 
+                and quality consistency across multiple platforms.
+            </p>
+
+            <div class="project-tech">
+                <span>Ultimaker S5</span>
+                <span>Bambu Lab</span>
+                <span>FDM Printing</span>
+                <span>Parameters</span>
+            </div>
+
+            <a href="#" class="project-link">View Project →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<section class="section" id="skills">
+
+    <h2 class="title">Technical Skills</h2>
+
+    <p class="text">
+        Comprehensive technical expertise across manufacturing systems, 
+        digital design, and Industry 4.0 technologies.
+    </p>
+
+    <div class="skills-container">
+
+        <!-- SKILL 1 -->
+        <div class="skill-category">
+
+            <h3>🏭 Manufacturing Systems</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">FDM 3D Printing</div>
+                <div class="skill-item">Additive Manufacturing</div>
+                <div class="skill-item">Process Optimization</div>
+                <div class="skill-item">Design for Manufacturing</div>
+                <div class="skill-item">Quality Assurance</div>
+                <div class="skill-item">Parameter Tuning</div>
+            </div>
+
+        </div>
+
+        <!-- SKILL 2 -->
+        <div class="skill-category">
+
+            <h3>🎨 Digital Design</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">Fusion 360</div>
+                <div class="skill-item">CAD Modeling</div>
+                <div class="skill-item">Tolerance Design</div>
+                <div class="skill-item">Assembly Design</div>
+                <div class="skill-item">Technical Drawings</div>
+                <div class="skill-item">Simulation</div>
+            </div>
+
+        </div>
+
+        <!-- SKILL 3 -->
+        <div class="skill-category">
+
+            <h3>🤖 Automation & Systems</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">FESTO CP Lab</div>
+                <div class="skill-item">Cyber-Physical Systems</div>
+                <div class="skill-item">Automated Assembly</div>
+                <div class="skill-item">Sensor Integration</div>
+                <div class="skill-item">PLC Systems</div>
+                <div class="skill-item">IoT Devices</div>
+            </div>
+
+        </div>
+
+        <!-- SKILL 4 -->
+        <div class="skill-category">
+
+            <h3>📊 Industry 4.0</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">Digital Twin</div>
+                <div class="skill-item">Tecnomatix Simulation</div>
+                <div class="skill-item">Production Planning</div>
+                <div class="skill-item">Data Analytics</div>
+                <div class="skill-item">QR Traceability</div>
+                <div class="skill-item">Supply Chain</div>
+            </div>
+
+        </div>
+
+        <!-- SKILL 5 -->
+        <div class="skill-category">
+
+            <h3>💻 Programming</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">HTML/CSS</div>
+                <div class="skill-item">Database Design</div>
+                <div class="skill-item">API Development</div>
+                <div class="skill-item">Version Control</div>
+            </div>
+
+        </div>
+
+        <!-- SKILL 6 -->
+        <div class="skill-category">
+
+            <h3>🛠️ Engineering Tools</h3>
+
+            <div class="skill-items">
+                <div class="skill-item">Slicer Software</div>
+                <div class="skill-item">CAM Tools</div>
+                <div class="skill-item">MATLAB</div>
+                <div class="skill-item">Project Management</div>
+                <div class="skill-item">Documentation</div>
+                <div class="skill-item">Git & GitHub</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EXPERIENCE SECTION ================= -->
+
+<section class="section dark" id="experience">
+
+    <h2 class="title">Professional Experience</h2>
+
+    <p class="text">
+        A timeline of key engineering projects, learning experiences, 
+        and professional milestones in digital manufacturing and Industry 4.0.
+    </p>
+
+    <div class="timeline">
+
+        <!-- EXPERIENCE 1 -->
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <span class="year-tag">2024 - 2025</span>
+
+                <h3>Lead Manufacturing Engineer</h3>
+
+                <p class="company">Industry 4.0 Research Initiative</p>
+
+                <p class="description">
+                    Designed and implemented comprehensive smart manufacturing workflow integrating 
+                    additive manufacturing, cyber-physical systems, and automated validation for scalable production.
+                </p>
+
+                <ul class="achievements">
+                    <li>Conducted 30+ design iterations optimizing print parameters across multiple printer platforms</li>
+                    <li>Implemented QR-based digital traceability system creating component-level cyber-physical digital twins</li>
+                    <li>Validated manufacturing process through automated FESTO CP Lab assembly line integration</li>
+                    <li>Analyzed production throughput and bottlenecks using Tecnomatix simulation achieving 95% quality target</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE 2 -->
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <span class="year-tag">2024</span>
+
+                <h3>CAD Design Specialist</h3>
+
+                <p class="company">Digital Manufacturing Lab</p>
+
+                <p class="description">
+                    Developed advanced 3D CAD models in Fusion 360 with focus on design for manufacturability, 
+                    tolerance analysis, and iterative refinement for additive manufacturing optimization.
+                </p>
+
+                <ul class="achievements">
+                    <li>Created complex snap-fit geometries with precise tolerance specifications for assembly validation</li>
+                    <li>Performed dimensional analysis and FEA simulation to predict manufacturing performance</li>
+                    <li>Implemented dual-extrusion design strategy for embedded QR code integration</li>
+                    <li>Developed comprehensive technical documentation and manufacturing drawings</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE 3 -->
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <span class="year-tag">2024</span>
+
+                <h3>Additive Manufacturing Technician</h3>
+
+                <p class="company">PrintCity - Advanced Manufacturing Facility</p>
+
+                <p class="description">
+                    Gained hands-on expertise in FDM 3D printing technology operating industrial printers 
+                    including Ultimaker S5, S3, and Bambu Lab P1S platforms with focus on parameter optimization.
+                </p>
+
+                <ul class="achievements">
+                    <li>Mastered print parameter tuning (layer resolution, infill density, speed, support structures) for quality consistency</li>
+                    <li>Achieved 85% first-time success rate through systematic parameter optimization workflow</li>
+                    <li>Implemented rapid prototyping cycles with daily machine utilization maximization</li>
+                    <li>Identified and resolved material-related issues (black PLA visibility vs white PLA inspection capability)</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE 4 -->
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <span class="year-tag">2024</span>
+
+                <h3>Automation & Quality Systems Engineer</h3>
+
+                <p class="company">FESTO CP Lab - Cyber-Physical Systems</p>
+
+                <p class="description">
+                    Integrated 3D printed components into automated FESTO CP Lab assembly system 
+                    for dimensional validation, snap-fit testing, and quality assurance automation.
+                </p>
+
+                <ul class="achievements">
+                    <li>Validated dimensional accuracy through laser measuring station integration</li>
+                    <li>Tested snap-fit assembly behavior using automated muscle press station</li>
+                    <li>Identified dimensional inconsistencies and failure modes through automated testing</li>
+                    <li>Successfully validated production-ready components meeting 95% assembly success criteria</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE 5 -->
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <span class="year-tag">2024</span>
+
+                <h3>Production Simulation Engineer</h3>
+
+                <p class="company">Advanced Manufacturing Analytics</p>
+
+                <p class="description">
+                    Performed comprehensive factory simulation using Tecnomatix platform analyzing production metrics, 
+                    resource utilization, and Theory of Constraints for manufacturing optimization.
+                </p>
+
+                <ul class="achievements">
+                    <li>Developed detailed digital factory model simulating complete manufacturing workflow</li>
+                    <li>Identified printing as primary bottleneck through Experiment Manager analysis</li>
+                    <li>Projected 50,000+ annual production capacity with resource optimization</li>
+                    <li>Analyzed throughput metrics and cycle time dependencies for process improvement</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="section" id="contact">
+
+    <h2 class="title">Get In Touch</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>engr.muhammadfaizanahmed@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💼</div>
+                <h3>LinkedIn</h3>
+                <p>Connect with me on LinkedIn</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🐙</div>
+                <h3>GitHub</h3>
+                <p>View my projects and code</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <p>Available upon request</p>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <div class="form-group">
+                    <textarea rows="8" placeholder="Your Message"></textarea>
+                </div>
+
+                <button class="btn" style="width: 100%;">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <p>&copy; 2026 Muhammad Faizan Ahmed. All rights reserved.</p>
+    <p>Designed & Built with Engineering Precision</p>
+</footer>
+
 </body>
+
 </html>
