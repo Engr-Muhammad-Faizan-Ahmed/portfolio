@@ -1,545 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Muhammad Faizan Ahmed - Robotics and Automation portfolio featuring PLC, SCADA, industrial robotics, virtual commissioning, AI, machine vision and Industry 4.0 projects." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Faizan Ahmed | Robotics & Automation Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Portfolio of Muhammad Faizan Ahmed - Robotics and Automation Engineer skilled in PLC, SCADA, virtual commissioning, industrial robotics, AI and Industry 4.0.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- ================= PRELOADER ================= -->
-    <div class="preloader" id="preloader">
-        <div class="loader-ring"></div>
-        <p>Loading Portfolio...</p>
+<header class="header">
+    <nav class="nav">
+        <a href="#home" class="logo"><span>FA</span> Faizan Ahmed</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="hero" id="home">
+    <div class="hero-content reveal">
+        <p class="tag">PLC • SCADA • Robotics • AI • Industry 4.0</p>
+        <h1>Muhammad Faizan Ahmed</h1>
+        <h2>Robotics & Automation Engineer</h2>
+        <p class="hero-text">MSc Robotics & Automation student at Manchester Metropolitan University with hands-on experience in PLC programming, SCADA development, virtual commissioning, industrial robotics, machine vision and smart manufacturing systems.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="assets/cv/Muhammad-Faizan-Ahmed-CV.pdf" target="_blank" class="btn">Download CV</a>
+            <a href="https://www.linkedin.com/in/muhammad-faizan-ahmed/" target="_blank" class="btn">LinkedIn</a>
+        </div>
     </div>
-
-    <!-- ================= NAVIGATION ================= -->
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="#home" class="logo">
-                <span>FA</span>
-                <strong>Faizan Ahmed</strong>
-            </a>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- ================= HERO ================= -->
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-grid"></div>
-            <div class="hero-glow glow-one"></div>
-            <div class="hero-glow glow-two"></div>
-
-            <div class="hero-content reveal">
-                <p class="eyebrow">PLC • SCADA • Robotics • AI • Industry 4.0</p>
-
-                <h1>
-                    Muhammad Faizan Ahmed
-                    <span>Robotics & Automation Engineer</span>
-                </h1>
-
-                <p class="hero-text">
-                    MSc Robotics & Automation student at Manchester Metropolitan University with hands-on
-                    experience in industrial automation, PLC programming, SCADA development, machine vision,
-                    virtual commissioning and robotic system integration.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary-btn">View Projects</a>
-                    <a href="assets/cv/Muhammad-Faizan-Ahmed-CV.pdf" class="btn secondary-btn" target="_blank">Download CV</a>
-                    <a href="https://www.linkedin.com/in/muhammad-faizan-ahmed/" class="btn ghost-btn" target="_blank">LinkedIn</a>
-                </div>
-
-                <div class="hero-stats">
-                    <div>
-                        <strong>PLC & SCADA</strong>
-                        <span>Siemens, Delta, WinCC Unified</span>
-                    </div>
-                    <div>
-                        <strong>Robotics</strong>
-                        <span>UR20, RoboDK, CoppeliaSim</span>
-                    </div>
-                    <div>
-                        <strong>AI & Vision</strong>
-                        <span>OpenCV, YOLO, Search Algorithms</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-card reveal">
-                <div class="profile-frame">
-                    <div class="profile-placeholder">
-                        <span>FA</span>
-                        <p>Add your professional photo here</p>
-                    </div>
-                </div>
-
-                <div class="system-card">
-                    <div class="status-line">
-                        <span class="pulse"></span>
-                        Portfolio System Online
-                    </div>
-
-                    <div class="metric">
-                        <span>Focus</span>
-                        <strong>Smart Manufacturing</strong>
-                    </div>
-                    <div class="metric">
-                        <span>Location</span>
-                        <strong>Manchester, UK</strong>
-                    </div>
-                    <div class="metric">
-                        <span>Seeking</span>
-                        <strong>Robotics / Automation Roles</strong>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= ABOUT ================= -->
-        <section class="section" id="about">
-            <div class="section-heading reveal">
-                <span class="section-tag">About Me</span>
-                <h2>Engineering automation systems from concept to validation</h2>
-                <p>
-                    I combine control systems, software, machine vision and robotics to build practical solutions
-                    for modern manufacturing environments.
-                </p>
-            </div>
-
-            <div class="about-layout">
-                <div class="about-card reveal">
-                    <h3>Professional Summary</h3>
-                    <p>
-                        I am an MSc Robotics & Automation student at Manchester Metropolitan University with
-                        industrial experience in automation engineering, SCADA development and robotic system
-                        integration. My work focuses on designing, programming and validating automation systems
-                        for real-world production environments.
-                    </p>
-                    <p>
-                        I have developed WinCC Unified SCADA systems, vision-based inspection solutions,
-                        PLC/HMI applications, virtual commissioning workflows, robot simulation projects and
-                        AI-based navigation systems. I am particularly interested in collaborative robotics,
-                        industrial inspection, smart manufacturing and Industry 4.0 systems.
-                    </p>
-                </div>
-
-                <div class="about-highlights reveal">
-                    <div class="highlight-box">
-                        <h4>Current Degree</h4>
-                        <p>MSc Robotics & Automation</p>
-                        <span>Manchester Metropolitan University</span>
-                    </div>
-
-                    <div class="highlight-box">
-                        <h4>Industrial Role</h4>
-                        <p>Automation Engineer</p>
-                        <span>Industronics Engineering</span>
-                    </div>
-
-                    <div class="highlight-box">
-                        <h4>MSc Project</h4>
-                        <p>Cobot Synchronisation</p>
-                        <span>Industrial sewing task optimisation</span>
-                    </div>
-
-                    <div class="highlight-box">
-                        <h4>Portfolio Theme</h4>
-                        <p>Industry 4.0</p>
-                        <span>Robotics, PLC, SCADA, AI and smart manufacturing</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= SKILLS ================= -->
-        <section class="section dark-section" id="skills">
-            <div class="section-heading reveal">
-                <span class="section-tag">Technical Skills</span>
-                <h2>Automation stack across hardware, software and simulation</h2>
-            </div>
-
-            <div class="skills-grid">
-                <article class="skill-card reveal">
-                    <div class="skill-icon">⚙</div>
-                    <h3>Industrial Automation & Control</h3>
-                    <ul>
-                        <li>PLC Programming: Siemens, Delta</li>
-                        <li>TIA Portal, ladder logic, SFC and structured text</li>
-                        <li>SCADA: WinCC Unified</li>
-                        <li>HMI development and alarm systems</li>
-                        <li>OPC UA, Node-RED and IIoT monitoring</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card reveal">
-                    <div class="skill-icon">🤖</div>
-                    <h3>Robotics & Simulation</h3>
-                    <ul>
-                        <li>Industrial robotics and cobot coordination</li>
-                        <li>UR20 robotic workcell design</li>
-                        <li>CoppeliaSim and RoboDK simulation</li>
-                        <li>MATLAB kinematics and trajectory validation</li>
-                        <li>Robot pick-and-place and safety zoning</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card reveal">
-                    <div class="skill-icon">◈</div>
-                    <h3>Machine Vision & AI</h3>
-                    <ul>
-                        <li>OpenCV and YOLO</li>
-                        <li>Vision-based industrial inspection</li>
-                        <li>Cloth width measurement system</li>
-                        <li>AI search algorithms: BFS, DFS, UCS, A*</li>
-                        <li>AGV warehouse navigation concepts</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card reveal">
-                    <div class="skill-icon">⌘</div>
-                    <h3>Engineering Development</h3>
-                    <ul>
-                        <li>Python, C++, MATLAB and Lua scripting</li>
-                        <li>Embedded systems and IoT prototyping</li>
-                        <li>PCB design using Altium and EasyEDA</li>
-                        <li>SolidWorks, Fusion 360 and additive manufacturing</li>
-                        <li>Technical documentation and project ownership</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- ================= PROJECTS ================= -->
-        <section class="section" id="projects">
-            <div class="section-heading reveal">
-                <span class="section-tag">Featured Projects</span>
-                <h2>Selected robotics, automation and smart manufacturing work</h2>
-                <p>
-                    These projects demonstrate my ability to design, simulate, program and validate automation systems.
-                </p>
-            </div>
-
-            <div class="projects-grid">
-
-                <article class="project-card featured reveal">
-                    <div class="project-image industrial-bg">
-                        <span>Industrial Robotics</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>Flagship Project</span>
-                            <span>2025–26</span>
-                        </div>
-                        <h3>UR20 Robotic Sorting & Packaging Workcell</h3>
-                        <p>
-                            Designed and simulated an automated Phones-R-Us robotic workcell using a UR20 cobot,
-                            vacuum gripper, conveyor handling, colour-based vision classification, defect rejection,
-                            safety monitoring and MATLAB kinematic validation.
-                        </p>
-                        <div class="tech-tags">
-                            <span>UR20</span>
-                            <span>CoppeliaSim</span>
-                            <span>MATLAB</span>
-                            <span>Lua</span>
-                            <span>Vision Sorting</span>
-                            <span>Safety Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="assets/documents/Industrial-Robotics-Assessment-Report.pdf" target="_blank">View Report</a>
-                            <a href="#contact">Discuss Project</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-image vc-bg">
-                        <span>Virtual Commissioning</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>PLC + HMI + NX</span>
-                            <span>2025–26</span>
-                        </div>
-                        <h3>Industrial Automation Virtual Commissioning</h3>
-                        <p>
-                            Implemented automated control for a batch mixing process and virtually commissioned a
-                            Festo workpiece handling station using TIA Portal, PLCSIM Advanced, NX CAD physics,
-                            HMI screens, sensors, actuators and alarms.
-                        </p>
-                        <div class="tech-tags">
-                            <span>TIA Portal</span>
-                            <span>PLCSIM Advanced</span>
-                            <span>NX CAD</span>
-                            <span>HMI</span>
-                            <span>IEC 61131-3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="assets/documents/Virtual-Commissioning-Executive-Summary.docx" target="_blank">View Document</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-image ai-bg">
-                        <span>AI Principles</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>Warehouse Robot Navigation</span>
-                            <span>2025–26</span>
-                        </div>
-                        <h3>AI Search Algorithms for AGV Navigation</h3>
-                        <p>
-                            Developed a warehouse navigation environment to evaluate BFS, DFS, UCS and A* search
-                            algorithms for AGV path planning using metrics including time, path cost, memory usage
-                            and visited nodes.
-                        </p>
-                        <div class="tech-tags">
-                            <span>AI Search</span>
-                            <span>A*</span>
-                            <span>BFS</span>
-                            <span>DFS</span>
-                            <span>UCS</span>
-                            <span>AGV</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="assets/documents/AI-Principles-Report.pdf" target="_blank">View Report</a>
-                            <a href="assets/videos/AI-Principles-Demo.mp4" target="_blank">Watch Video</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-image dm-bg">
-                        <span>Digital Manufacturing</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>Industry 4.0 Smart Factory</span>
-                            <span>2025–26</span>
-                        </div>
-                        <h3>Phones-R-Us Digital Manufacturing System</h3>
-                        <p>
-                            Built a smart manufacturing case study integrating additive manufacturing, FESTO CP Lab
-                            validation, QR-based digital traceability, Tecnomatix production simulation and
-                            cyber-physical manufacturing concepts.
-                        </p>
-                        <div class="tech-tags">
-                            <span>Industry 4.0</span>
-                            <span>3D Printing</span>
-                            <span>FESTO CP Lab</span>
-                            <span>Digital Twin</span>
-                            <span>Tecnomatix</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#contact">Add Project Page</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-image scada-bg">
-                        <span>Industrial Experience</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>Professional Work</span>
-                            <span>2025</span>
-                        </div>
-                        <h3>Automated Warehouse SCADA System</h3>
-                        <p>
-                            Designed and implemented a full WinCC Unified SCADA system for a fully automated warehouse
-                            project for a UK-based client, covering monitoring, HMI interfaces and production-focused
-                            automation control.
-                        </p>
-                        <div class="tech-tags">
-                            <span>WinCC Unified</span>
-                            <span>SCADA</span>
-                            <span>HMI</span>
-                            <span>Warehouse Automation</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal">
-                    <div class="project-image vision-bg">
-                        <span>Machine Vision</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-topline">
-                            <span>Industrial Inspection</span>
-                            <span>2025</span>
-                        </div>
-                        <h3>Vision-Based Cloth Width Measurement</h3>
-                        <p>
-                            Developed a computer vision inspection solution for real-time textile cloth width
-                            measurement, supporting industrial quality control and production monitoring.
-                        </p>
-                        <div class="tech-tags">
-                            <span>OpenCV</span>
-                            <span>Computer Vision</span>
-                            <span>Textile Inspection</span>
-                            <span>Quality Control</span>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- ================= EXPERIENCE ================= -->
-        <section class="section dark-section" id="experience">
-            <div class="section-heading reveal">
-                <span class="section-tag">Experience</span>
-                <h2>Professional and academic engineering journey</h2>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <span class="timeline-date">Sep 2025 – Sep 2026</span>
-                    <div class="timeline-content">
-                        <h3>MSc Robotics & Automation</h3>
-                        <h4>Manchester Metropolitan University</h4>
-                        <p>
-                            Current postgraduate study focused on robotics, automation, AI, virtual commissioning,
-                            industrial robotics and smart manufacturing. MSc project: cobot synchronisation for
-                            industrial sewing task optimisation.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <span class="timeline-date">Mar 2025 – Aug 2025</span>
-                    <div class="timeline-content">
-                        <h3>Automation Engineer</h3>
-                        <h4>Industronics Engineering</h4>
-                        <p>
-                            Designed and implemented WinCC Unified SCADA systems and computer vision solutions for
-                            industrial automation projects, including automated warehouse monitoring and real-time
-                            textile inspection.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <span class="timeline-date">Mar 2024 – Mar 2025</span>
-                    <div class="timeline-content">
-                        <h3>Research Officer / Hardware Design Engineer</h3>
-                        <h4>INTEL Lab, PNEC NUST</h4>
-                        <p>
-                            Worked on drone prototyping, PLC-based systems, PCB design, PyQt6 GUI development,
-                            Linux software integration, 3D modelling and custom enclosure design.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <span class="timeline-date">Jul 2023 – Dec 2023</span>
-                    <div class="timeline-content">
-                        <h3>IoT Engineer</h3>
-                        <h4>Indus Technetronic</h4>
-                        <p>
-                            Developed smart switching IoT devices, PCB prototypes, 3D printed enclosures and
-                            residential energy monitoring concepts.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item reveal">
-                    <span class="timeline-date">Oct 2019 – Dec 2023</span>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Engineering in Mechatronics Engineering</h3>
-                        <h4>Mehran University of Engineering & Technology</h4>
-                        <p>
-                            Built a strong foundation in mechatronics, robotics, automation, electronics,
-                            programming and manufacturing systems.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= ACHIEVEMENTS ================= -->
-        <section class="section" id="achievements">
-            <div class="section-heading reveal">
-                <span class="section-tag">Achievements</span>
-                <h2>Recognition, awards and certifications</h2>
-            </div>
-
-            <div class="achievement-grid">
-                <div class="achievement-card reveal">
-                    <strong>Scholarship</strong>
-                    <h3>Allan and Nesta Ferguson Masters Scholarship</h3>
-                    <p>Recognition supporting postgraduate study in the United Kingdom.</p>
-                </div>
-
-                <div class="achievement-card reveal">
-                    <strong>Award</strong>
-                    <h3>Gold Medalist</h3>
-                    <p>Academic recognition for high performance.</p>
-                </div>
-
-                <div class="achievement-card reveal">
-                    <strong>Award</strong>
-                    <h3>Silver Medalist</h3>
-                    <p>Recognition for academic and technical achievement.</p>
-                </div>
-
-                <div class="achievement-card reveal">
-                    <strong>Certifications</strong>
-                    <h3>AI, Python, Fusion 360 and Prompt Engineering</h3>
-                    <p>Continuous learning across design, programming and intelligent systems.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CONTACT ================= -->
-        <section class="section contact-section" id="contact">
-            <div class="contact-card reveal">
-                <div>
-                    <span class="section-tag">Contact</span>
-                    <h2>Let’s build intelligent automation systems</h2>
-                    <p>
-                        I am actively seeking robotics, automation, PLC, SCADA, machine vision and Industry 4.0
-                        engineering opportunities.
-                    </p>
-                </div>
-
-                <div class="contact-links">
-                    <a href="mailto:engr.muhammadfaizanahmed@gmail.com">engr.muhammadfaizanahmed@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/muhammad-faizan-ahmed/" target="_blank">LinkedIn Profile</a>
-                    <a href="https://engr-muhammad-faizan-ahmed.github.io/portfolio/" target="_blank">Current Portfolio</a>
-                    <a href="assets/cv/Muhammad-Faizan-Ahmed-CV.pdf" target="_blank">Download CV</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <p>© 2026 Muhammad Faizan Ahmed. Robotics & Automation Portfolio.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="hero-panel reveal">
+        <div class="profile-box"><span>FA</span><p>Replace with your photo: assets/images/profile.jpg</p></div>
+        <div class="status-card"><p><span class="dot"></span> Portfolio Online</p><h3>Seeking Robotics / Automation Roles</h3><small>Manchester, United Kingdom</small></div>
+    </div>
+</section>
+<section class="section" id="about">
+    <div class="section-title reveal"><p class="tag">About Me</p><h2>Automation engineer focused on smart manufacturing systems</h2></div>
+    <div class="about-grid">
+        <div class="glass-card reveal"><h3>Professional Summary</h3><p>I am an MSc Robotics & Automation student with industrial experience in automation engineering, SCADA development, machine vision and robotic systems integration. My work focuses on designing and deploying practical automation solutions for real production environments.</p><p>I have worked with PLC programming, WinCC Unified SCADA, HMI development, virtual commissioning, robot simulation, MATLAB kinematics, computer vision and Industry 4.0 technologies.</p></div>
+        <div class="highlight-grid reveal"><div><strong>MSc</strong><span>Robotics & Automation</span></div><div><strong>PLC</strong><span>Siemens / Delta</span></div><div><strong>SCADA</strong><span>WinCC Unified</span></div><div><strong>Robotics</strong><span>UR20 / CoppeliaSim</span></div></div>
+    </div>
+</section>
+<section class="section dark" id="skills">
+    <div class="section-title reveal"><p class="tag">Skills</p><h2>Technical capability across automation, robotics and AI</h2></div>
+    <div class="skills-grid">
+        <div class="skill-card reveal"><h3>Industrial Automation</h3><ul><li>Siemens PLC Programming</li><li>Delta PLC Programming</li><li>TIA Portal</li><li>WinCC Unified SCADA</li><li>HMI Development</li><li>OPC UA and Node-RED</li></ul></div>
+        <div class="skill-card reveal"><h3>Robotics & Simulation</h3><ul><li>Industrial Robotics</li><li>UR20 Robot Workcell Design</li><li>CoppeliaSim</li><li>RoboDK</li><li>MATLAB Kinematics</li><li>Trajectory Validation</li></ul></div>
+        <div class="skill-card reveal"><h3>Machine Vision & AI</h3><ul><li>OpenCV</li><li>YOLO</li><li>Industrial Inspection</li><li>BFS, DFS, UCS, A*</li><li>AGV Navigation</li><li>Autonomous Systems</li></ul></div>
+        <div class="skill-card reveal"><h3>Engineering Development</h3><ul><li>Python</li><li>C++</li><li>MATLAB</li><li>Lua Scripting</li><li>PCB Design</li><li>Fusion 360 / SolidWorks</li></ul></div>
+    </div>
+</section>
+<section class="section" id="projects">
+    <div class="section-title reveal"><p class="tag">Projects</p><h2>Featured engineering portfolio projects</h2></div>
+    <div class="projects-grid">
+        <article class="project-card large reveal"><div class="project-media"><video controls muted preload="metadata"><source src="assets/videos/industrial-robotics.webm" type="video/webm"></video></div><div class="project-content"><p class="project-label">Industrial Robotics</p><h3>UR20 Robotic Sorting & Packaging Workcell</h3><p>Designed and simulated an automated Phones-R-Us robotic workcell using a UR20 robot, vacuum gripper, conveyor, colour sorting, defect rejection, safety monitoring and MATLAB kinematic validation.</p><div class="tags"><span>UR20</span><span>CoppeliaSim</span><span>MATLAB</span><span>Lua</span><span>Vision Sorting</span></div><div class="links"><a href="assets/documents/Industrial-Robotics-Assessment-Report.pdf" target="_blank">View Report</a><a href="assets/videos/industrial-robotics.webm" target="_blank">Open Video</a></div></div></article>
+        <article class="project-card large reveal"><div class="project-media"><video controls muted preload="metadata"><source src="assets/videos/virtual-commissioning.mp4" type="video/mp4"></video></div><div class="project-content"><p class="project-label">Virtual Commissioning</p><h3>PLC Automation & Virtual Commissioning System</h3><p>Automated a batch mixing system and virtually commissioned a Festo workpiece handling station using TIA Portal, PLCSIM Advanced, NX CAD physics, HMI controls, sensors, actuators and alarms.</p><div class="tags"><span>TIA Portal</span><span>PLCSIM Advanced</span><span>NX CAD</span><span>HMI</span><span>IEC 61131-3</span></div><div class="links"><a href="assets/documents/Virtual-Commissioning-Executive-Summary.docx" target="_blank">View Document</a><a href="assets/videos/virtual-commissioning.mp4" target="_blank">Open Video</a></div></div></article>
+        <article class="project-card reveal"><div class="project-image ai"></div><div class="project-content"><p class="project-label">AI Principles</p><h3>Warehouse Robot Navigation</h3><p>Built a warehouse navigation project comparing BFS, DFS, UCS and A* search algorithms for AGV path planning using time, path cost, memory and visited nodes.</p><div class="tags"><span>AI Search</span><span>A*</span><span>BFS</span><span>DFS</span><span>AGV</span></div><div class="links"><a href="assets/documents/AI-Principles-Report.pdf" target="_blank">View Report</a><a href="assets/videos/ai-principles-demo.mp4" target="_blank">Watch Video</a></div></div></article>
+        <article class="project-card reveal"><div class="project-image digital"></div><div class="project-content"><p class="project-label">Digital Manufacturing</p><h3>Phones-R-Us Industry 4.0 Smart Factory</h3><p>Developed a smart manufacturing case study integrating additive manufacturing, FESTO CP Lab validation, QR-based traceability, digital twin concepts and Tecnomatix production simulation.</p><div class="tags"><span>Industry 4.0</span><span>3D Printing</span><span>Digital Twin</span><span>CP Lab</span></div></div></article>
+        <article class="project-card reveal"><div class="project-image scada"></div><div class="project-content"><p class="project-label">Industrial Experience</p><h3>Automated Warehouse SCADA System</h3><p>Designed and implemented a WinCC Unified SCADA system for a fully automated warehouse project for a UK-based client, including monitoring screens and production-focused control interfaces.</p><div class="tags"><span>WinCC Unified</span><span>SCADA</span><span>HMI</span><span>Warehouse Automation</span></div></div></article>
+        <article class="project-card reveal"><div class="project-image vision"></div><div class="project-content"><p class="project-label">Machine Vision</p><h3>Vision-Based Cloth Width Measurement</h3><p>Developed a computer vision inspection solution for real-time textile cloth width measurement, supporting industrial quality control and monitoring.</p><div class="tags"><span>OpenCV</span><span>Computer Vision</span><span>Inspection</span><span>Quality Control</span></div></div></article>
+    </div>
+</section>
+<section class="section dark" id="experience">
+    <div class="section-title reveal"><p class="tag">Experience</p><h2>Professional and academic journey</h2></div>
+    <div class="timeline reveal">
+        <div class="timeline-item"><span>Sep 2025 – Sep 2026</span><h3>MSc Robotics & Automation</h3><p>Manchester Metropolitan University — MSc project on cobot synchronisation for industrial sewing task optimisation.</p></div>
+        <div class="timeline-item"><span>Mar 2025 – Aug 2025</span><h3>Automation Engineer</h3><p>Industronics Engineering — WinCC Unified SCADA, machine vision inspection and automation system integration.</p></div>
+        <div class="timeline-item"><span>Mar 2024 – Mar 2025</span><h3>Research Officer / Hardware Design Engineer</h3><p>INTEL Lab, PNEC NUST — drone prototyping, PLC systems, GUI development, PCB design and Linux integration.</p></div>
+        <div class="timeline-item"><span>Jul 2023 – Dec 2023</span><h3>IoT Engineer</h3><p>Indus Technetronic — IoT smart switching devices, PCB design and 3D-printed enclosures.</p></div>
+    </div>
+</section>
+<section class="section achievements"><div class="section-title reveal"><p class="tag">Achievements</p><h2>Awards and recognition</h2></div><div class="achievement-grid"><div class="glass-card reveal"><h3>Allan and Nesta Ferguson Masters Scholarship</h3></div><div class="glass-card reveal"><h3>Gold Medalist</h3></div><div class="glass-card reveal"><h3>Silver Medalist</h3></div><div class="glass-card reveal"><h3>AI, Python and Fusion 360 Certifications</h3></div></div></section>
+<section class="section contact-section" id="contact"><div class="contact-card reveal"><div><p class="tag">Contact</p><h2>Let’s connect for robotics and automation opportunities</h2><p>I am actively seeking robotics, automation, PLC, SCADA, machine vision and Industry 4.0 engineering opportunities.</p></div><div class="contact-links"><a href="mailto:engr.muhammadfaizanahmed@gmail.com">engr.muhammadfaizanahmed@gmail.com</a><a href="https://www.linkedin.com/in/muhammad-faizan-ahmed/" target="_blank">LinkedIn Profile</a><a href="assets/cv/Muhammad-Faizan-Ahmed-CV.pdf" target="_blank">Download CV</a></div></div></section>
+</main>
+<footer><p>© 2026 Muhammad Faizan Ahmed | Robotics & Automation Portfolio</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
