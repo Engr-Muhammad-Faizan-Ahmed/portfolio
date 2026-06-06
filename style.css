@@ -413,7 +413,8 @@ video{
 .glass-card,
 .skill-card,
 .project-card,
-.contact-card{
+.contact-card,
+.cert-card{
     border:1px solid var(--line);
     background:var(--card);
     border-radius:24px;
@@ -425,12 +426,14 @@ video{
     padding:34px;
 }
 
-.glass-card h3{
+.glass-card h3,
+.cert-card h3{
     color:var(--cyan);
     margin-bottom:16px;
 }
 
-.glass-card p{
+.glass-card p,
+.cert-card p{
     color:#cbd5e1;
     margin-bottom:16px;
 }
@@ -474,7 +477,8 @@ video{
 
 .skill-card:hover,
 .project-card:hover,
-.glass-card:hover{
+.glass-card:hover,
+.cert-card:hover{
     transform:translateY(-8px);
     border-color:rgba(0,245,255,.4);
     box-shadow:
@@ -500,6 +504,19 @@ video{
     position:absolute;
     left:0;
     color:var(--cyan);
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.cert-card{
+    padding:30px;
+    transition:.3s ease;
 }
 
 /* PROJECTS */
@@ -751,7 +768,8 @@ footer{
     }
 
     .skills-grid,
-    .achievement-grid{
+    .achievement-grid,
+    .cert-grid{
         grid-template-columns:repeat(2,1fr);
     }
 }
@@ -829,7 +847,8 @@ footer{
     .hero-stats,
     .skills-grid,
     .achievement-grid,
-    .highlight-grid{
+    .highlight-grid,
+    .cert-grid{
         grid-template-columns:1fr;
     }
 
@@ -839,7 +858,8 @@ footer{
 
     .project-content,
     .glass-card,
-    .contact-card{
+    .contact-card,
+    .cert-card{
         padding:25px;
     }
 
