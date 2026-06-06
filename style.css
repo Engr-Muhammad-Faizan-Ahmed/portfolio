@@ -552,8 +552,11 @@ video{
     object-fit:cover;
 }
 
+/* ONLY IMAGE PROJECTS */
+
 .project-image{
     height:260px;
+    width:100%;
     overflow:hidden;
     position:relative;
     border-bottom:1px solid rgba(0,255,255,.15);
